@@ -1,0 +1,47 @@
+Weydson Duda de Oliveira
+
+1º Ao final do processamento o valor da variável soma será 91
+
+2º def fibonacci_sequence(limit):
+    sequence = [0, 1]
+    while sequence[-1] < limit:
+        sequence.append(sequence[-1] + sequence[-2])
+    return sequence
+
+def is_in_fibonacci_sequence(number, fibonacci_sequence):
+    return number in fibonacci_sequence
+
+limit = int(input("Informe o limite para a sequência de Fibonacci: "))
+number_to_check = int(input("Informe o número que deseja verificar na sequência: "))
+
+sequence = fibonacci_sequence(limit)
+
+if is_in_fibonacci_sequence(number_to_check, sequence):
+    print(f"O número {number_to_check} pertence à sequência de Fibonacci até o limite {limit}.")
+else:
+    print(f"O número {number_to_check} não pertence à sequência de Fibonacci até o limite {limit}.")
+
+3º a)9
+   b)128
+   c)49
+   d)100
+   e)13
+   f)27
+   
+4º Primeiro é possível ligar a lâmpada e aguardar alguns minutos.
+Em seguida, desligar esse interruptor e ligar um segundo interruptor.
+Enquanto isso, entro na sala onde as lâmpadas estão e olho o estado das lâmpadas. Agora para resolver o problema da para verificar se uma lâmpada estiver acesa, ela está conectada ao interruptor que foi ligado primeiro.
+Se uma lâmpada estiver desligada e ainda estiver fria, ela está conectada ao interruptor que não foi usado. Mas, se uma lâmpada estiver desligada, mas estiver quente, ela está conectada ao interruptor que foi ligado e desligado.
+
+5º def inverter_string(string):
+    string_invertida = ""
+    for char in string:
+        string_invertida = char + string_invertida
+    return string_invertida
+
+entrada = input("Digite uma string: ")
+resultado = inverter_string(entrada)
+print("String invertida:", resultado)
+
+
+
